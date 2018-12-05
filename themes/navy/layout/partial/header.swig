@@ -2,12 +2,12 @@
     <div id="header-inner" class="inner">
         <h1 id="logo-wrap">
             <a href="{{ url_for_lang('') }}" id="logo">bPanel</a>
-            <a href="https://status.im/" class="by-bcoin" target="_blank">from bcoin</a>
+            <a href="https://bcoin.io/" class="by-bcoin" target="_blank">from bcoin</a>
         </h1>
         <nav id="main-nav">
             <a href="/docs/" class="main-nav-link">Docs</a>
             <a href="/tutorials/" class="main-nav-link">Plugins</a>
-            <a href="/plugins/" class="main-nav-link">Item 3</a>
+            <a href="/plugins/" class="main-nav-link">-</a>
             <a href="/templates/" class="main-nav-link">Community?</a>
         </nav>
 

@@ -3,7 +3,6 @@
 node_modules/
 *.log
 db.json
-SECRETS.js
 .deploy*/
 package-lock.json
 public/
