@@ -1,0 +1,55 @@
+menu:
+  docs: Docs
+  api: API
+  news: News
+  plugins: Plugins
+  themes: Themes
+  search: Search
+  chat: Chat
+  blog: Blog
+  tutorials: Tutorials
+
+index:
+  get_started: Get started
+
+page:
+  contents: Contents
+  back_to_top: Back to Top
+  improve: Improve this doc
+  prev: Prev
+  next: Next
+  last_updated: "Last updated: %s"
+
+sidebar:
+  docs:
+    getting_started: Getting Started
+    introduction: Introduction
+    quick_start: Quick Start
+    configuration: Configuration
+    about_plugins: About Plugins
+    installing_plugins: Installing Plugins
+    plugin_development: Plugin Development
+    intro_plugin: Intro to Plugin Dev
+    blockchain_api: Blockchain API
+    guides: Guides
+    node_info: Node Info View
+    api: API
+    metadata: metadata
+    decorate: decorate
+    map_component_state: mapComponentState
+    getprops: getProps
+    reducers: reducers
+    middleware: middleware
+    constants: Constants
+    sockets: Sockets
+    decorate_plugins: Decorate Plugins
+    bundling_plugins: Bundling Plugins
+    bpanel_utils: bPanel Utils
+    bpanel_ui: bPanel UI
+    ui_introduction: Introduction
+    components: Components
+    utilities: Utilities
+    theming: Theming (Skins)
+    theming_getting_started: Getting Started
+    theming_defaults: Theming Defaults
+    theming_variables: Theming Variables

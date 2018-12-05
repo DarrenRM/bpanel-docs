@@ -1,0 +1,93 @@
+- name: bPanel Genesis
+  description: GUI application to interact with a Bcoin Bitcoin node. Includes Dashboard, Multi-sig Wallet, Nav & Settings plugins.
+  thumbnail: generic.png
+  link: /tutorials/bpanel_default.html
+  tags:
+    - theme
+
+- name: bMenace 
+  description: The default skin used in bPanel Genesis theme.
+  thumbnail: generic.png
+  link: /tutorials/bmenace_skin.html
+  tags:
+    - skin
+- name: bMoon
+  description: A dark theme with moon and space landscapes.
+  thumbnail: generic.png
+  link: /tutorials/bmoon_skin.html
+  tags:
+    - skin
+- name: bDark
+  description: A dark theme with monospace fonts.
+  thumbnail: generic.png
+  link: /tutorials/bdark_skin.html
+  tags:
+    - skin
+- name: hDark
+  description: A Handshake Network (HNS) skin based on bDark.
+  thumbnail: generic.png
+  link: /tutorials/hdark_skin.html
+  tags:
+    - skin
+
+- name: Simple Wallet
+  description: Send and Receive your Bitcoin using the bPanel Simple Wallet.
+  thumbnail: generic.png
+  link: /tutorials/simple_wallet.html
+  tags:
+    - plugin
+- name: Simple Mining
+  description: A very basic, simple plugin for running some basic mining tests on simnet and regtest environments.
+  thumbnail: generic.png
+  link: /tutorials/simple_mining.html
+  tags:
+    - plugin
+- name: Dashboard
+  description: A simple, blank panel view for bPanel that can be decorated by widgets.
+  thumbnail: generic.png
+  link: /tutorials/dashboard.html
+  tags:
+    - plugin
+- name: BUI
+  description: A playground plugin to view and test available bpanel-ui components.
+  thumbnail: generic.png
+  link: /tutorials/bui.html
+  tags:
+    - plugin
+- name: Chain Sockets
+  description: A utility plugin for subscribing to chain sockets and managing the chain state accordingly.
+  thumbnail: generic.png
+  link: /tutorials/chain_sockets.html
+  tags:
+    - plugin
+- name: bPanel Footer
+  description: A footer plugin that shows the current version of bcoin you're connecting to and the sync progress of your node.
+  thumbnail: generic.png
+  link: /tutorials/footer.html
+  tags:
+    - plugin
+- name: bPanel Header
+  description: A plugin to decorate your header with a widget for the top right that shows current network you're connected to, URI of the node, and connection status.
+  thumbnail: generic.png
+  link: /tutorials/header.html
+  tags:
+    - plugin
+
+- name: Recent Blocks
+  description: A widget that displays a table with the 10 most recent blocks that have been mined. Includes expanding rows and copyable fields.
+  thumbnail: generic.png
+  link: /tutorials/recent_blocks.html
+  tags:
+    - widget
+- name: Mempool Widget
+  description: A simple widget for your dashboard plugin that uses the chain-sockets utility plugin to show the total number of transactions and size of the mempool.
+  thumbnail: generic.png
+  link: /tutorials/mempool_widget.html
+  tags:
+    - widget
+- name: Peers Widget
+  description: Includes two widgets for your dashboard, a table of your currently connected peers and a second dashboard that shows a Google map with the approximate location of the peers.
+  thumbnail: generic.png
+  link: /tutorials/peers_widget.html
+  tags:
+    - widget

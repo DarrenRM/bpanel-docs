@@ -1,0 +1,60 @@
+docs:
+  getting_started:
+    introduction: index.html
+    quick_start: quick_start.html
+    configuration: configuration.html
+    about_plugins: about_plugins.html
+    installing_plugins: installing_plugins.html
+
+  plugin_development:
+    intro_plugin: intro_plugin.html
+    blockchain_api: blockchain_api.html
+
+  guides:
+    node_info: node_info.html
+
+  api:
+    metadata: api_metadata.html
+    decorate: api_decorate.html
+    map_component_state: api_map_state.html
+    getprops: api_get_props.html
+    reducers: api_reducers.html
+    middleware: api_middleware.html
+    constants: api_constants.html
+    sockets: api_sockets.html
+    decorate_plugins: api_decorate_plugins.html
+    bundling_plugins: api_bundling_plugins.html
+    bpanel_utils: api_bpanel_utils.html
+
+
+  bpanel_ui:
+    ui_introduction: ui_introduction.html
+    components: ui_components.html
+    utilities: ui_utilities.html
+
+  theming:
+    theming_getting_started: theming_started.html
+    theming_defaults: theming_defaults.html
+    theming_variables: theming_variables.html
+
+api:
+  core:
+    overview: index.html
+    events: events.html
+    locals: locals.html
+    router: router.html
+    box: box.html
+    rendering: rendering.html
+    posts: posts.html
+    scaffolds: scaffolds.html
+    themes: themes.html
+  extensions:
+    console: console.html
+    deployer: deployer.html
+    filter: filter.html
+    generator: generator.html
+    helper: helper.html
+    migrator: migrator.html
+    processor: processor.html
+    renderer: renderer.html
+    tag: tag.html

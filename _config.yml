@@ -1,0 +1,34 @@
+title: bPanel · A Blockchain Management System
+subtitle: "A Blockchain Management System Powered by bcoin"
+description: "A Blockchain Management System, or BMS, like bPanel, aims to achieve in the world of blockchain interfaces what WordPress did for content, all while backed by the enterprise-level security and robustness of bcoin."
+author: bcoin team
+language: en
+timezone: UTC
+
+url: https://bpanel.org
+root: /
+permalink: news/:year/:month/:day/:title/
+archive_dir: news
+code_dir: downloads/code
+new_post_name: :year-:month-:day-:title.md # File name of new posts
+post_asset_folder: true
+per_page: 0
+
+theme: navy
+deploy:
+  type: git
+  repo: git@github.com:hexojs/hexojs.github.io.git
+
+highlight:
+  enable: true
+  line_number: false
+
+disqus_shortname: hexojs
+#google_analytics: UA-79146816-4
+#fb_admins: 100000247608790
+algolia:
+  en:
+    apiKey: 224741f6242f7aa05753ba22277dbc5c
+    indexName: bpanel-org
+twitter: bcoin
+github: bpanel-org/bpanel
