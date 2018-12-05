@@ -6,7 +6,7 @@ The website for bPanel
 Install:
 ``` bash
 $ npm install hexo-cli -g
-$ cd bpanel-org
+$ cd [wherever you cloned this]
 $ npm install
 $ hexo generate
 $ hexo server
