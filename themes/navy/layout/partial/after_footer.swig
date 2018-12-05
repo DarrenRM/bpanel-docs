@@ -91,6 +91,37 @@ $(document).ready(function() {
     right: 12px;
   }
 
+  .btn-sort {
+    transition: opacity .3s ease-in-out;
+    padding: 2px 6px;
+    /*position: absolute;*/
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #e0e5f7;
+/*     background-color: #eee;
+    background-image: linear-gradient(#fcfcfc,#eee); 
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;*/
+    user-select: none;
+    -webkit-appearance: none;
+    top: 34px;
+    right: 12px;
+  }
+
+  .btn-sort:focus {
+    outline-color: #3715dc;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 1px;
+    background-image: linear-gradient(-0.55turn,#fcfcfc,#e0e5f7);
+  }
+
   .flash {
     background-color: grey;
   }
@@ -108,3 +139,12 @@ $(document).ready(function() {
     });
 </script>
 {% endif %}
+
+<!-- Plugin Page Sort / Filter -->
+<script src="/js/mixitup.min.js"></script>
+<script>
+$(document).ready(function() {
+  var resultItems = $('.results');
+  var mixer = mixitup(resultItems);
+});
+</script>
