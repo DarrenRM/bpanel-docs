@@ -1,17 +1,8 @@
-# Embark Official Website
+# bPanel Org
 
-The website for Embark.
+The website for bPanel
 
 ## Getting started
-
-Install dependencies:
-
-``` bash
-$ git clone https://github.com/status-im/embark-site.git
-$ cd embark-site
-$ npm install
-```
-
 Generate:
 
 ``` bash
