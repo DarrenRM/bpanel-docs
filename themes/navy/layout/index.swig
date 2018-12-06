@@ -21,17 +21,17 @@
                 </div>
                 <input type="search" id="search-input" placeholder="Search...">
             </div>
-            <span><a href="/news/" class="main-nav-link">Blog</a></span>
-            <span><a href="/chat/" class="main-nav-link">Slack</a></span>
+            <span><a href="https://medium.com/bcoin-io" class="main-nav-link">Blog</a></span>
+            <span><a href="https://bcoin.io/slack-signup.html" class="main-nav-link">Slack</a></span>
             <span class="social-link social-link--github"><a href="https://github.com/embark-framework/embark"
                                                              target="_blank"></a></span>
         </div>
     </div>
 
     <div class="intro">
-        <h1>An extensible UI framework for Full Nodes</h1>
-        <p>Built in React, Redux & Node, bPanel enables you to securely develop and deploy custom apps on your own node.</p>
-        <p>Includes a Multi-Party Wallet, Block Explorer & Dashboard out of the box.</p>
+        <h1>An extensible application framework for full nodes</h1>
+        <!--<p>Comes standard with a Multi-Party Wallet, Block Explorer & Node Manager out of the box.</p>-->
+        <p>Built in JS, bPanel enables you to securely develop and deploy multichain apps on your own node.</p>
         <div class="intro-buttons">
             <a class="button button--main" href="/docs/quick_start.html">Get Started</a>
             <a class="button button--secondary" href="/docs/">Documentation</a>
@@ -41,19 +41,18 @@
 </div>
 
 <div class="home-wrap">
+        <p>Comes standard with a Multi-Party Wallet, Block Explorer & Node Manager out of the box.</p>
 
     <div class="command-wrap">
         <div class="command">
-            npm install M A G I C
+            git clone
         </div>
         <div class="command-description">
-            Install bPanel via NPM
+            Install bPanel via git clone
         </div>
     </div>
 
-    <div class="section-header section-header--main">
-        <h2>Featured Docs</h2>
-        <p>Let's get you spun up:</p>
+<div class="section-header section-header--main" style="padding-bottom: 0px;">
     </div>
 
     <div class="features">
@@ -114,8 +113,8 @@
 
     <div class="sections">
         <div class="inner-header">
-            <h2>A Customizable UI Framework for Full Nodes</h2>
-            <p>Built in React, Redux, and Node, bPanel is an extensible UI framework that lets users interact with their nodes, 
+            <h2>A Customizable App Framework for Full Nodes</h2>
+            <p>Built in React, Redux, and Node, bPanel is an extensible application framework that lets users interact with their nodes, 
             test ideas, and build entire applications quickly on multiple networks simultaneously. bPanel is easily used as a 
             base for your next crypto project.</p>
         </div>

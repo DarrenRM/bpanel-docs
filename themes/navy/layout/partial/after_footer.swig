@@ -139,12 +139,13 @@ $(document).ready(function() {
     });
 </script>
 {% endif %}
-
 <!-- Plugin Page Sort / Filter -->
 <script src="/js/mixitup.min.js"></script>
 <script>
 $(document).ready(function() {
-  var resultItems = $('.results');
-  var mixer = mixitup(resultItems);
+  if(window.location.pathname == "/tutorials/"){
+    var resultItems = $('.results');
+    var mixer = mixitup(resultItems);
+  }
 });
 </script>
