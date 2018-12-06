@@ -9,7 +9,7 @@
             <ul class="main-nav">
                 <li><a href="/docs/">Docs</a></li>
                 <li><a href="/tutorials/">Plugins</a></li>
-                <li><a href="/plugins/">Item 3</a></li>
+                <li><a href="/plugins/">Item3</a></li>
                 <li><a href="/templates/">Community</a></li>
             </ul>
         </div>
@@ -23,7 +23,7 @@
             </div>
             <span><a href="https://medium.com/bcoin-io" class="main-nav-link">Blog</a></span>
             <span><a href="https://bcoin.io/slack-signup.html" class="main-nav-link">Slack</a></span>
-            <span class="social-link social-link--github"><a href="https://github.com/embark-framework/embark"
+            <span class="social-link social-link--github"><a href="https://github.com/bpanel-org/bpanel"
                                                              target="_blank"></a></span>
         </div>
     </div>
