@@ -7,8 +7,7 @@
         <nav id="main-nav">
             <a href="/docs/" class="main-nav-link">Docs</a>
             <a href="/tutorials/" class="main-nav-link">Plugins</a>
-            <a href="/plugins/" class="main-nav-link">-</a>
-            <a href="/templates/" class="main-nav-link">Community?</a>
+            <a href="/templates/" class="main-nav-link">Community</a>
         </nav>
 
         <div class="secondary-nav">
@@ -20,9 +19,9 @@
             </div>
 
             <div class="second-nav-links">
-                <span><a href="/news/" class="main-nav-link">Blog</a></span>
-                <span><a href="/chat/" class="main-nav-link">Slack</a></span>
-                <span class="social-link social-link--github"><a href="https://github.com/embark-framework/embark"
+                <span><a href="https://medium.com/bcoin-io" class="main-nav-link">Blog</a></span>
+                <span><a href="https://bcoin.io/slack-signup.html" class="main-nav-link">Slack</a></span>
+                <span class="social-link social-link--github"><a href="https://github.com/bpanel-org/bpanel"
                                                              target="_blank"></a></span>
             </div>
         </div>

@@ -49,6 +49,28 @@
   &.on
     display: block
 
+.plugin#resources
+  //display: none
+  padding: 20px
+  @media mq-tablet
+    flex: 0 0 100% !important
+  @media mq-normal
+    flex: 0 0 100%
+//    flex: 0 0 (100 / 3)%
+  &.on
+    display: block
+
+.plugin img#resources
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    @media mq-mobile
+      margin: 30px 10px 0 0;
+    @media mq-tablet
+      margin: 2px 10px 0 0;
+
+
 .plugin-name
   font-family: font-title
   font-weight: bold
@@ -58,6 +80,18 @@
   line-height: 1
   display: block
   padding-top: 10px
+  &:hover
+    color: color-link-hover
+
+.plugin-name#resources
+  font-family: font-title
+  font-weight: bold
+  color: color-link
+  font-size: 20px
+  text-decoration: none
+  line-height: 1
+  display: block
+  padding-top: 20px
   &:hover
     color: color-link-hover
 

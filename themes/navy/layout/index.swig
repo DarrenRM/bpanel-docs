@@ -9,7 +9,6 @@
             <ul class="main-nav">
                 <li><a href="/docs/">Docs</a></li>
                 <li><a href="/tutorials/">Plugins</a></li>
-                <li><a href="/plugins/">Item3</a></li>
                 <li><a href="/templates/">Community</a></li>
             </ul>
         </div>
