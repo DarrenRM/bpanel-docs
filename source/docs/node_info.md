@@ -22,7 +22,7 @@ Note that even though we're building this for a blank bPanel install, none of th
 
 This guide will assume you're starting with a completely blank bPanel setup with no other plugins installed or enabled in `appConfig.js`. So, if you navigate to your bPanel in your browser, it will look something like this:
 
-![default app](/img/1-blank-bpanel.png "blank bpanel")*Fresh bPanel install*
+![default app](/docs/img/1-blank-bpanel.png "blank bpanel")*Fresh bPanel install*
 
 We are also going to build this plugin assuming you want to publish it to npm when it's ready. This isn't strictly necessary of course, but you're going to be putting so much work into creating a beautiful plugin, why not share it with the world!
 
@@ -140,7 +140,7 @@ export const metadata = {
 
 Now if you run `npm run babel` in your plugin directory and refresh bPanel in your browser, you should see a link to your view!
 
-![bpanel sidebar](/img/2-sidebar.png "bpanel with nav")*Your plugin is now available in the sidebar!*
+![bpanel sidebar](/docs/img/2-sidebar.png "bpanel with nav")*Your plugin is now available in the sidebar!*
 
 ## 4) Build the view
 To leverage the theming built into bPanel, let's use the bpanel-ui React component library to build out our view.
@@ -201,7 +201,7 @@ export const decoratePanel = (Panel, { React, PropTypes }) => {
 
 Now, build your plugin again, wait for bpanel's webpack to catch up, then reload bpanel in your browser, navigate to your plugin path, and you should see your view in the panel area!
 
-![panel view](/img/3-panel.png "bpanel with view")*Your plugin now has a view!*
+![panel view](/docs/img/3-panel.png "bpanel with view")*Your plugin now has a view!*
 
 ## 5) Get info from the state
 So now we have a view, we just don't have anything to display there. For this, all we have to do is use `mapComponentState` to get the information we're interested in and use `getRouteProps` to pass that information down to our route.
@@ -276,7 +276,7 @@ const NodeInfo = ({ network, height, progress }) => (
 
 Now, build and refresh bPanel and you should see your node's actual information displayed!
 
-![node info](/img/4-node-info.png "bpanel with node info")*Your plugin is now displaying live info from your node*
+![node info](/docs/img/4-node-info.png "bpanel with node info")*Your plugin is now displaying live info from your node*
 
 ## 6) Connect to sockets
 The last step we want to do is add the ability for our Node Info view to update the information shown anytime there is a change on our node. The part of our view that this effects most directly is the chain height (if a new block is found on the network, the height will increase accordingly).
@@ -467,7 +467,7 @@ bcoin-cli --network=regtest rpc generate 4
 
 Now check bpanel in your browser and you should notice that, without even refreshing, the height has increased by 4 and recent blocks now shows a list of 4 hashes.
 
-![live sockets](/img/5-sockets.png "bpanel with sockets")*Plugin showing live updates from your socket connection*
+![live sockets](/docs/img/5-sockets.png "bpanel with sockets")*Plugin showing live updates from your socket connection*
 
 ## 7) Publish to NPM
 The last step is to add your plugin to npm so that other bPanel users can install and use your plugin with their node!

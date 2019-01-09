@@ -33,7 +33,7 @@ a bcoin full node and a bcoin wallet server. Any of these services can be ran on
 [configuration](/docs/quick-start.html#configuration), it is possible to use bPanel with a remote bcoin node.
 (It is even possible to create a plugin that runs a bcoin node directly in the client).
 
-![bpanel architecture](/img/tech-diagram.png "bpanel architecture")
+![bpanel architecture](/docs/img/tech-diagram.png "bpanel architecture")
 
 The goal is to enable a flexible developer experience. You could host your app server remotely, allowing for
 multiple users to access it from different clients and all talking to the same remote node.
@@ -44,7 +44,7 @@ This also provides an extra layer of security by not giving users direct access 
 
 Some plugins require the webapp to be served over TLS.
 
-![bpanel architecture](/img/bpanel-architecture.png "tls architecture")
+![bpanel architecture](/docs/img/bpanel-architecture.png "tls architecture")
 
 The default `docker-compose` starts a TLS terminating reverse proxy and generates the
 required certs automatically.

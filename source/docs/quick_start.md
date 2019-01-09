@@ -37,7 +37,7 @@ The first run can take a while since there are a few packages that need to be do
 Please be patient. Once everything is done, you should be able to see bPanel running in your browser at
 `http://localhost:5000`
 
-![default preview](/img/default-preview.png "default preview")*You should see something like this once you're set up*
+![default preview](/docs/img/default-preview.png "default preview")*You should see something like this once you're set up*
 
 ## Installing Plugins
 The initial build of bPanel isn't particularly useful. Plugins are the real workhorses of the bPanel system
@@ -73,7 +73,7 @@ $ bpanel-cli install @bpanel/bdark-theme
 Once the plugins have been downloaded and installed, reload the page and you'll see how
 your bPanel has been transformed!
 
-![plugins preview](/img/plugins-preview.png "plugins preview")*bPanel with some extra plugins
+![plugins preview](/docs/img/plugins-preview.png "plugins preview")*bPanel with some extra plugins
 and a new theme*
 
 You can read more about plugins [here](/docs/plugin-intro.html) and about developing your own

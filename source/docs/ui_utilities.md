@@ -191,7 +191,7 @@ class Test extends React.PureComponent {
 
 Your nested view component should look something like this:
 
-![nested views](/img/nested-views.gif "nested views")
+![nested views](/docs/img/nested-views.gif "nested views")
 
 Not pretty, but it gets the job done!
 
