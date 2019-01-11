@@ -1,19 +1,13 @@
 ---
 title: metadata
 ---
-Metadata is where you tell the app and other users about your plugin.
-This includes information like the name of your plugin, a description,
-author information, also a display name where relevant.
+Metadata is where you tell the app and other users about your plugin. This includes information like the name of your plugin, a description, author information, also a display name where relevant.
 
 **Note that the metadata export is required for all plugins.**
 
-If you are using `bpanel-cli` to create your plugin then this will be
-taken care of for you. Plugin metadata is also saved in the redux store,
-so you can use the redux devtools to see more about plugins that are installed.
-In the future, this will help support plugin management through the UI.
+If you are using `bpanel-cli` to create your plugin then this will be taken care of for you. Plugin metadata is also saved in the redux store, so you can use the redux devtools to see more about plugins that are installed. In the future, this will help support plugin management through the UI.
 
-Metadata might be expanded in the future to support more flexible
-plugin functionality. For now, the following properties can be used:
+Metadata might be expanded in the future to support more flexible plugin functionality. For now, the following properties can be used:
 
 ```javascript
 export const metadata = {

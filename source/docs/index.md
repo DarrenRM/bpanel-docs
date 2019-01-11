@@ -20,7 +20,7 @@ The possibilities of things that can be built with a BMS are potentially endless
 - Password management built on proven cryptography
 
 ## Architecture
-The [default configuration](/docs/quick-start.html) for bPanel uses `docker-compose` to manage multiple docker containers. It will launch an app server that acts as a router and static file server, a TLS terminating nginx reverse proxy, a bcoin full node and a bcoin wallet server. Any of these services can be ran on their own - with the proper [configuration](/docs/quick-start.html#configuration), it is possible to use bPanel with a remote bcoin node. (It is even possible to create a plugin that runs a bcoin node directly in the client).
+The [default configuration](/docs/quick_start.html) for bPanel uses `docker-compose` to manage multiple docker containers. It will launch an app server that acts as a router and static file server, a TLS terminating nginx reverse proxy, a bcoin full node and a bcoin wallet server. Any of these services can be ran on their own - with the proper configuration, it is possible to use bPanel with a remote bcoin node. (It is even possible to create a plugin that runs a bcoin node directly in the client).
 
 ![bpanel architecture]( /docs/img/tech-diagram.png "bpanel architecture")
 
@@ -35,8 +35,8 @@ The default `docker-compose` starts a TLS terminating reverse proxy and generate
 ## Tech Stack
 The App Server is built entirely with NodeJS and Express. WebSocket management uses bcoin's native WebSocket implementation, bsock (compatible with the Socket.io API). Currently there is no persistent storage support outside of bcoin's own chain and wallet databases and local storage (though it is planned for future releases).
 
-The front-end and plugin system are built with React and Redux. Redux is also used to [manage the socket client](/docs/api-sockets.html) through a middleware called [bsock-middleware](https://www.npmjs.com/package/bsock-middleware).
+The front-end and plugin system are built with React and Redux. Redux is also used to [manage the socket client](/docs/api_sockets.html) through a middleware called [bsock-middleware](https://www.npmjs.com/package/bsock-middleware).
 
-The Bootstrap grid system (v4) is used to support responsive layouts and a custom [theming system](/docs/theming.html) using [aphrodite](https://www.npmjs.com/package/aphrodite-simple) for advanced inline style support are used for styling and CSS.
+The Bootstrap grid system (v4) is used to support responsive layouts and a custom [theming system](/docs/theming_started.html) using [aphrodite](https://www.npmjs.com/package/aphrodite-simple) for advanced inline style support are used for styling and CSS.
 
-You can read more about how the plugin system is designed and how to develop your own plugins [here](/docs/plugin-intro).
+>You can read more about how the plugin system is designed and how to develop your own plugins [here](/docs/intro_plugin.html).

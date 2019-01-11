@@ -72,7 +72,7 @@ const client = getClient();
 
 #### bpanelClient and bwalletClient [deprecated]
 NOTE: the client wrappers `bpanelClient` and `bwalletClient` have been deprecated in
-favor of [`getClient`](#getclient).
+favor of [`getClient`](#getClient).
 
 ### `chain`
 Helper functions for working with the blockchain.

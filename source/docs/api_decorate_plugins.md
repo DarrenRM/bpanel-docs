@@ -6,7 +6,7 @@ Decorating plugins, and creating plugins that can be decorated, is a more advanc
 There are three parts to decorating plugins:
 - Have a plugin that exposes itself to decoration
 - Expose hooks as properties in your target plugin that widgets can hook into
-- Export a [`decoratePlugin`](#decorateplugin) method from your widget that targets the plugin you want to decorate
+- Export a [`decoratePlugin`](#decoratePlugin) method from your widget that targets the plugin you want to decorate
 
 This enables for far more customizability within views. For example, you can have advanced Dashboard views where you compose a wide array of visualizations that can be used to get information about your node at a glance. Some users might want to focus on node/network performance while others might show information on transaction volume. By customizing the view with different widgets, you can have one dashboard that addresses both.
 
@@ -15,7 +15,7 @@ This needs to be exposed by the target plugin. The function signature is similar
 
 Let's create a quick example of a sample plugin called `sample`, that will create a new view from a component `MyView` and allow itself to be decorated by widgets.
 
-```
+``` javascript
 // Import your component here. Can be any valid React component
 import MyView from './MyView';
 
@@ -58,14 +58,14 @@ export const decoratePanel = (Panel, { React, PropTypes }) => {
 }
 ```
 
-Note that `decoratePanel` is exactly the same as normal except that we are passing the decorated version of the component to the route view (`_MyView`). Read more about `decoratePanel` [here](/docs/api-decorate.html#decoratepanel).
+Note that `decoratePanel` is exactly the same as normal except that we are passing the decorated version of the component to the route view (`_MyView`). Read more about `decoratePanel` [here](/docs/api_decorate.html#decoratePanel).
 
 
 ### Adding hooks
 The last thing you need do is add the "hooks" in your component for widgets to be able to decorate the component. This works the same as normal decoration. All that you need is some kind of `customChildren` prop that is displayed in your component.
 
 
-```
+``` javascript
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -98,11 +98,11 @@ you might want to show an array of widgets. This can be done with overwriting to
 the existing children in your new children property), but this can be difficult with nesting, especially for
 styling.
 
-The [`widgetCreator`](/docs/ui-utilities.html#widgetcreator) actually assumes an array of functions that return `React.createElement` elements.
+The [`widgetCreator`](/docs/api-bpanel-utils.html#widgetCreator) actually assumes an array of functions that return `React.createElement` elements.
 Below is an example from `@bpanel/dashboard` plugin for a decorator hook in the target component
 to handle these cases.
 
-```
+``` javascript
 export default class Dashboard extends React.PureComponent {
   ...
   render() {
@@ -121,7 +121,7 @@ export default class Dashboard extends React.PureComponent {
 ```
 
 ### `decoratePlugin`
-`decoratePlugin` is what you export from a plugin when you want to decorate another plugin. All it is is an object with a key-value pair where the key should map exactly to the name of the plugin you are targeting. The value is a Higher Order Component that looks just like the other [`decorate`](/docs/api-decorate.html) component exports.
+`decoratePlugin` is what you export from a plugin when you want to decorate another plugin. All it is is an object with a key-value pair where the key should map exactly to the name of the plugin you are targeting. The value is a Higher Order Component that looks just like the other [`decorate`](/docs/api_decorate.html) component exports.
 
 ```javascript
 const myWidget = (MyView, { React, PropTypes }) =>
@@ -167,7 +167,7 @@ export const decoratePlugin = { sample: myWidget };
 ```
 
 ### Access to the Store
-The good news is that since you are strictly just decorating an existing component, all other extensions in the API work like normal. You can use [`mapComponentState`](/docs/api-map-state-dispatch.html#mapcomponentstate) to pass properties from the state to `Panel`, and [`getRouteProps`](http://localhost:3000/docs/api-getprops.html#getrouteprops) to pass those props from `Panel` to the plugin you are decorating!
+The good news is that since you are strictly just decorating an existing component, all other extensions in the API work like normal. You can use [`mapComponentState`](/docs/api_map_state.html#mapComponentState) to pass properties from the state to `Panel`, and [`getRouteProps`](/docs/api_get_props.html#getRouteProps) to pass those props from `Panel` to the plugin you are decorating!
 
 ```javascript
 export const mapComponentState = {

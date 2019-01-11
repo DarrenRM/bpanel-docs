@@ -13,7 +13,7 @@ You can read more about how middleware works [here](https://redux.js.org/advance
 Thanks to some [magic JavaScript currying](https://hackernoon.com/currying-in-js-d9ddc64f162e), the middleware extension gives us access to a lot of useful tools: the store (both `dispatch` and `getState`), `next` (to continue the dispatch), and `action` (the actual action being dispatched).
 
 Example:
-```
+``` javascript
 export const middleware = store => next => action => {
   const { dispatch, getState } = store;
 
@@ -38,4 +38,4 @@ export const middleware = store => next => action => {
 }
 ```
 
-Middleware can be an extremely powerful tool in your plugin development, especially when used together with the other extensions. For example, you could use [sockets](/docs/api-sockets.html) to listen for a new event on the node, intercept the resulting dispatched action with middleware to mutate the payload, and then update the state using a [custom reducer](/docs/api-reducer.html) in response!
+Middleware can be an extremely powerful tool in your plugin development, especially when used together with the other extensions. For example, you could use [sockets](/docs/api_sockets.html) to listen for a new event on the node, intercept the resulting dispatched action with middleware to mutate the payload, and then update the state using a [custom reducer](/docs/api_reducers.html) in response!
